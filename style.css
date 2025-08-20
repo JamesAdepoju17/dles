@@ -1,0 +1,132 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #0f1115;
+  color: #fff;
+  line-height: 1.6;
+}
+
+/* Navbar */
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: transparent;
+  z-index: 1000;
+}
+
+nav .logo {
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  color: #00ff6c;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 100px 10%;
+  height: 100vh;
+}
+
+.hero-text h1 {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.hero-text h1 span {
+  color: #00ff6c;
+}
+
+.hero-text h2 {
+  font-size: 22px;
+  margin: 10px 0;
+}
+
+.hero-text p {
+  max-width: 500px;
+  color: #ccc;
+  margin: 15px 0 25px;
+}
+
+/* Button */
+.btn {
+  display: inline-block;
+  padding: 12px 25px;
+  background: #00ff6c;
+  color: #000;
+  font-weight: bold;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #00cc55;
+}
+
+/* Social Icons */
+.social {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.social a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border: 2px solid #00ff6c;
+  border-radius: 50%;
+  color: #00ff6c;
+  transition: 0.3s;
+}
+
+social a:hover {
+  background: #00ff6c;
+  color: #000;
+}
+
+/* Profile Image */
+.hero-img {
+  position: relative;
+}
+
+.hero-img img {
+  width: 300px;
+  border-radius: 50%;
+  border: 5px solid transparent;
+  background: linear-gradient(135deg, #00ff6c, #000) border-box;
+}
